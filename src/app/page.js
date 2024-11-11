@@ -22,7 +22,7 @@ const scheduleData = [
     code: "013110(804)",
     room: "210",
     time: "16:30 - 18:00",
-    day: ["monday", "thursday", "saturday"],
+    day: ["monday", "thursday"],
   },
   {
     subject: "OS",
@@ -55,7 +55,7 @@ const scheduleData = [
 ];
 
 const groupByDay = () => {
-  const daysOfWeek = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+  const daysOfWeek = ["monday", "tuesday", "wednesday", "thursday", "friday"];
   const scheduleByDay = {};
 
   daysOfWeek.forEach((day) => {
@@ -66,7 +66,7 @@ const groupByDay = () => {
 };
 
 const getCurrentDay = () => {
-  const daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+  const daysOfWeek = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday"];
   const today = new Date().getDay();
   return daysOfWeek[today];
 };
