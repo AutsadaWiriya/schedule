@@ -13,5 +13,14 @@
 
   body{
     background-color: #EAEFF5;
+    scrollbar-width: none;
+  }
+
+  html::-webkit-scrollbar {
+      display: none;
+  }
+
+  * {
+      user-select: none;
   }
 }

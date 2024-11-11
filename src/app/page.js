@@ -136,13 +136,13 @@ function ClassCard({ classItem, index }) {
   return (
     <div
       onClick={() => setIsExpanded(!isExpanded)}
-      className={`cursor-pointer w-full p-4 ${colors[index % colors.length]} rounded-xl shadow-sm hover:shadow-md transition-all duration-300`}
+      className={"cursor-pointer w-full p-4 bg-[#E2F0FF] rounded-xl shadow-sm hover:shadow-md transition-all duration-300"}
     >
       <h3 className="text-lg font-semibold text-[#3275B4]">{classItem.subject}</h3>
       <p className="text-[#3275B4]"><strong>Time:</strong> {classItem.time}</p>
       {isExpanded && (
         <div>
-          <p className="text-[#3275B4]"><strong>Code:</strong> {classItem.code}</p>
+          <p className="text-[#3275B4]"><strong>Code(Sec):</strong> {classItem.code}</p>
           <p className="text-[#3275B4]"><strong>Room:</strong> {classItem.room}</p>
         </div>
       )}
