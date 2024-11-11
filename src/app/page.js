@@ -83,7 +83,7 @@ export default function Home() {
   });
 
   return (
-    <div className="flex justify-center p-6 w-[80%] md:w-[40%] mx-auto">
+    <div className="flex justify-center p-6 w-[90%] md:w-[60%] lg:w-[40%] mx-auto">
       <div className="w-full">
         <h1 className="text-3xl font-semibold mb-8 text-center text-[#53A3F1]">Class Schedule</h1>
         {sortedSchedule.map(([day, classes]) => (
