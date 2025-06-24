@@ -29,7 +29,7 @@ const scheduleData = [
     subject: "Adv Comp Eng Tech",
     code: "261405(801)",
     room: "ENG521",
-    time: "11:00 - 12:30",
+    time: "9:30 - 12:30",
     day: ["wednesday"],
   },
   {
